@@ -1,0 +1,36 @@
+{
+    "name": "lswl/laravel-rabbitmq",
+    "description": "Laravel rabbitmq.",
+    "keywords": [
+        "lswl",
+        "laravel",
+        "rabbitmq"
+    ],
+    "homepage": "https://linshaowl.com/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "linshaowl",
+            "email": "linshaowl@163.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lswl\\Rabbitmq\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-json": "*",
+        "lswl/laravel-support": "^8.0",
+        "lswl/laravel-log": "^8.0",
+        "vladimir-yuldashev/laravel-queue-rabbitmq": "^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lswl\\Rabbitmq\\LswlServiceProvider"
+            ]
+        }
+    }
+}
